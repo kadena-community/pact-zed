@@ -1,2 +1,2 @@
-# pact-zed
-Pact lang zed extension
+# act-zed
+Pact Programming Language extension for Zed

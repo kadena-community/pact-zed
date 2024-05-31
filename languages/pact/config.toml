@@ -2,15 +2,19 @@ name = "Pact"
 grammar = "pact"
 path_suffixes = ["pact", "repl"]
 line_comments = ["; "]
-autoclose_before = ";,=)}]"
+autoclose_before = ";,.=)}]"
 brackets = [
     { start = "{", end = "}", close = true, newline = true },
     { start = "[", end = "]", close = true, newline = true },
     { start = "(", end = ")", close = true, newline = true },
     { start = "\"", end = "\"", close = true, newline = false, not_in = [
         "string",
+        "comment",
     ] },
+
     { start = "\\'", end = " ", close = true, newline = false, not_in = [
         "string",
+        "comment",
     ] },
 ]
+tab_size = 2

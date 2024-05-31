@@ -2,13 +2,16 @@
 
 Pact Programming Language extension for [Zed](https://github.com/zed-industries/zed)
 
+## Features
+
+- Syntax highlighting
+- Outline view
+- Code folding
+- Tasks for running pact files/tests
+- LSP support for autocompletion, diagnostics, hover docs, go to defintion and more
+
 ## Test locally
 
 - Clone this repo: `git clone https://github.com/kadena-community/pact-zed`
-- Clone the tree-sitter-pact repo: `git clone https://github.com/kadena-community/tree-sitter-pact`
-- CD into the repo: `cd tree-sitter-pact`
-- Build the WASM: `tree-sitter build-wasm` (might require docker-engine running)
-- Rename the WASM file to `pact.wasm`
-- Move the WASM file into `grammars` folder in this repository
-- Move the this repository to `~/Library/Application\ Support/Zed/extensions/installed`
-- After moving make sure to remove `grammars/pact.toml` and only the `pact.wasm` file exist in the `grammars` folder otherwise zed won't load it correctly
+- Open Zed
+- Go to `Settings` -> `Extensions` -> Click the `Install Dev Extension` and select the `pact-zed` folder

@@ -1,7 +1,0 @@
-{
-  "name": "PactLang",
-  "version": "0.0.1",
-  "authors": ["Salama Ashoush <salama@kadena.io>"],
-  "description": "Pact Programming Language extension for Zed",
-  "repository": "https://github.com/kadena-community/pact-zed"
-}

@@ -5,15 +5,15 @@
     "args": ["$ZED_FILE"]
   },
   {
+    "label": "Run current file with trace",
+    "command": "pact",
+    "args": ["-t", "$ZED_FILE"],
+    "tags": ["pact-repl"]
+  },
+  {
     "label": "Find and run a repl file for the current file",
     "command": "pact",
     "args": ["-r", "-t", "$ZED_FILE"]
-  },
-  {
-    "label": "Run current repl test/file",
-    "command": "pact",
-    "args": ["-r", "-t", "$ZED_FILE"],
-    "tags": ["pact-repl"]
   },
   {
     "label": "Generate coverage report for the current file",

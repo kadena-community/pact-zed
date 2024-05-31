@@ -1,3 +1,5 @@
 
 (begin-tx)
-(defun )
+(load "test.pact")
+(expect "Should return \"Hello, World!\"" "Hello, World!" (test.hello))
+(commit-tx)

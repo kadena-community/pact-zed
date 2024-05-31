@@ -1,0 +1,15 @@
+id = "pact-lang"
+name = "PactLang"
+version = "0.0.2"
+schema_version = 1
+authors = ["Salama Ashoush <salamaashoush@gmail.com>"]
+description = "Pact Programming Language extension for Zed"
+repository = "https://github.com/kadena-community/pact-zed"
+
+[grammars.pact]
+repository = "https://github.com/kadena-community/tree-sitter-pact"
+commit = "991b8e45b5455b516da51baa44bfe0a50a8464bb"
+
+[language_servers.pact]
+name = "Pact Language Server"
+language = "Pact"

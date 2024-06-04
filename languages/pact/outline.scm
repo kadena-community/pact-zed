@@ -27,3 +27,11 @@
 (interface
     "interface" @context
     name: (_) @name) @item
+
+(s_expression
+    head: (s_expression_head) @name
+    tail: (string) @context
+    (#any-of? @name
+        "begin-tx" "expect" "expect-failure" "expect-that" "bench" "verify" "typecheck"
+    )
+) @item

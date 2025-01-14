@@ -1,5 +1,5 @@
 
-(begin-tx)
+(begin-tx "test")
 (load "test.pact")
 (expect "Should return \"Hello, World!\"" "Hello, World!" (test.hello))
 (commit-tx)

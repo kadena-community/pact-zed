@@ -3,6 +3,6 @@
   (#any-of? @name
    "begin-tx" "expect" "expect-failure" "expect-that" "bench" "verify" "typecheck"
   )
-  tail: (string) @run
+  tail: (string) @run @script
   (#set! tag pact-repl)
 ) @pact-repl

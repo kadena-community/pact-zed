@@ -5,7 +5,7 @@
     "args": ["$ZED_FILE"]
   },
   {
-    "label": "pact -t $ZED_FILE",
+    "label": "$ZED_FILE",
     "command": "pact",
     "args": ["-t", "$ZED_FILE"],
     "tags": ["pact-repl"]

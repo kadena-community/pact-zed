@@ -20,7 +20,7 @@
 ;------------
 (reference (atom) @local.reference)
 (def_identifier) @local.definition.function
-(schema_property_identifier) @local.definition
+(schema_field_identifier) @local.definition
 (module_identifier) @local.definition
 (module_governance) @local.reference
 

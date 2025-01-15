@@ -44,8 +44,10 @@ Copy the path to the pact installation and append `/bin/pact` then paste it in y
 {
   "lsp": {
     "pact": {
-      "path": "/home/salama/.local/share/pactup/pact-versions/nightly/bin/pact",
-      "arguments": ["--lsp"]
+      "binary":{
+        "path": "/home/salama/.local/share/pactup/pact-versions/nightly/bin/pact",
+        "arguments": ["--lsp"]
+      }
     }
   }
 }
@@ -62,8 +64,10 @@ You can specify a custom Pact binary in your Zed settings:
 {
   "lsp": {
     "pact": {
-      "path": "/path/to/your/pact",
-      "arguments": ["--lsp"]
+      "binary":{
+        "path": "/path/to/your/pact",
+        "arguments": ["--lsp"]
+      }
     }
   }
 }
@@ -73,8 +77,8 @@ You can specify a custom Pact binary in your Zed settings:
 
 The extension will look for a Pact binary in this order:
 
-1. System PATH
-2. Custom path specified in Zed settings
+1. Custom path specified in Zed settings
+2. System PATH
 3. Automatically downloaded nightly build (cached for future use)
 
 > 💡 **Tip**: Using Pactup is recommended as it helps you manage and update your Pact installation easily.
